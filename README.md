@@ -4,30 +4,18 @@
 
 1. **Klonowanie repozytorium:**
     ```bash
-    git clone <URL do Twojego repozytorium>
-    cd <nazwa repozytorium>
+    git clone https://github.com/BohdanYabl/Project-group-3.git
     ```
-
+    lub zainstalowac ZIP
 2. **Instalacja zależności:**
     ```bash
     npm install
     ```
 
-3. **Konfiguracja środowiska:**
-    ```bash
-    npm run setup
-    ```
-
-    Skrypt `setup` utworzy plik `.env` w głównym katalogu projektu z podstawową konfiguracją, taką jak połączenie z lokalną bazą danych MongoDB.
-
-4. **Uruchomienie projektu:**
+3. **Uruchomienie projektu:**
     ```bash
     npm start
     ```
-
-## Wymagania
-- Zainstalowany [Node.js](https://nodejs.org/)
-- Lokalna baza danych MongoDB
 
 ## Opis projektu
 
