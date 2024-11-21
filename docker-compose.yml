@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/books
+      - JWT_SECRET=R8l1v4gFqT1!b7iU5Wz2aA9z8E3#pF9
+      - PORT=3001
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run devStart
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
