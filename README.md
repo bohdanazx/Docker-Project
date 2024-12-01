@@ -12,10 +12,6 @@ Mybrary to aplikacja webowa zaprojektowana z myślą o zarządzaniu zbiorami ksi
 4. **Zarządzanie autorami**: Aplikacja umożliwia dodawanie i edytowanie informacji o autorach książek, co pozwala na łatwe zarządzanie ich danymi.
 5. **Interaktywne wyszukiwanie**: Użytkownicy mogą wyszukiwać książki i autorów za pomocą wbudowanej funkcji wyszukiwania.
 
-## Autor
-
-Bohdan Yablinchuk - 44987
-
 ## Instalacja i uruchomienie projektu
 
 Poniżej znajdziesz instrukcje dotyczące instalacji i uruchomienia projektu na Twoim komputerze przy użyciu Docker i Docker Compose. Dzięki temu uruchomisz aplikację w izolowanym środowisku, które zawiera wszystkie niezbędne komponenty.
@@ -55,3 +51,7 @@ Poniżej znajdziesz instrukcje dotyczące instalacji i uruchomienia projektu na 
    ```bash
    docker-compose down
    ```
+
+## Autor
+
+Bohdan Yablinchuk - 44987
