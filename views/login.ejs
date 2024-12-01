@@ -1,28 +1,29 @@
 <!-- views/login.ejs -->
-<form class="form-auth" action="/signup">
+<form class="form-auth">
     <h2 class="h-auth">Login</h2>
     <label class="label-auth" for="email">Email</label>
-    <input class="input-auth" cl type="text" name="email" required />
+    <input class="input-auth" type="text" name="email" required />
     <div class="email error"></div>
     <label class="label-auth" for="password">Password</label>
     <input class="input-auth" type="password" name="password" required />
     <div class="password error"></div>
-    <button class="btn-auth">Log in</button>
+    <button class="btn-auth" type="submit">Log in</button>
+    <button class="btn-auth" type="button" id="signUpRedirect">Sign up</button>
 </form>
 
 <script>
     const form = document.querySelector('form');
     const emailError = document.querySelector('.email.error');
     const passwordError = document.querySelector('.password.error');
+    const signUpRedirect = document.getElementById('signUpRedirect');
 
+    // Handle login submission
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // reset errors
         emailError.textContent = '';
         passwordError.textContent = '';
 
-        // get values
         const email = form.email.value;
         const password = form.password.value;
 
@@ -34,17 +35,21 @@
             });
             const data = await res.json();
             console.log(data);
+
             if (data.errors) {
                 emailError.textContent = data.errors.email;
                 passwordError.textContent = data.errors.password;
             }
-            //не перенаправляє на головну сторінку
             if (data.user) {
                 location.assign('/');
             }
-        }
-        catch (err) {
+        } catch (err) {
             console.log(err);
         }
+    });
+
+    // Redirect to Sign up
+    signUpRedirect.addEventListener('click', () => {
+        location.assign('/signup');
     });
 </script>
