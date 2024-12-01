@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Виставляємо порт
-EXPOSE 3001
+EXPOSE 3000
 
 # Запускаємо додаток
 CMD ["npm", "run", "devStart"]

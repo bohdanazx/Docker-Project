@@ -73,7 +73,6 @@ app.get("/read-cookies", (req, res) => {
   res.json(cookies);
 });
 
-app.listen(process.env.PORT || 3001, '0.0.0.0', () => {
-  console.log(`Server is running on port ${process.env.PORT || 3001}`);
+app.listen(process.env.PORT || 3000, "0.0.0.0", () => {
+  console.log(`Server is running on port ${process.env.PORT || 3000}`);
 });
-

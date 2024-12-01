@@ -32,6 +32,29 @@ Poniżej znajdziesz instrukcje dotyczące instalacji i uruchomienia projektu na 
    Otwórz terminal i sklonuj repozytorium projektu za pomocą polecenia:
 
    ```bash
-   git clone https://github.com/BohdanYabl/Mybrary.git
+   git clone https://github.com/bohdanazx/Docker-Project.git
    cd Mybrary
    ```
+
+2. **Budowanie i uruchamianie projektu**
+
+   Użyj polecenia docker-compose do zbudowania i uruchomienia aplikacji:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Dostęp do aplikacji**
+   Po zakończeniu procesu budowania i uruchamiania, aplikacja będzie dostępna w przeglądarce pod adresem:
+
+   ```arduino
+   http://localhost:3000
+   ```
+
+### Zatrzymywanie projektu
+
+    Aby zatrzymać działające kontenery, użyj polecenia:
+
+    ```bash
+    docker-compose down
+    ```
