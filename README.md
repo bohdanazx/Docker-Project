@@ -46,15 +46,12 @@ Poniżej znajdziesz instrukcje dotyczące instalacji i uruchomienia projektu na 
 
 3. **Dostęp do aplikacji**
    Po zakończeniu procesu budowania i uruchamiania, aplikacja będzie dostępna w przeglądarce pod adresem:
+   [http://localhost:3000](http://localhost:3000)
 
-   ```arduino
-   http://localhost:3000
+4. **Zatrzymywanie projektu**
+
+   Aby zatrzymać działające kontenery, użyj polecenia:
+
+   ```bash
+   docker-compose down
    ```
-
-### Zatrzymywanie projektu
-
-    Aby zatrzymać działające kontenery, użyj polecenia:
-
-    ```bash
-    docker-compose down
-    ```
